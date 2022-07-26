@@ -1,0 +1,686 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*estilos del index*/
+
+/*estilos menu*/
+
+.menu{
+    display: flex;    
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    justify-content: center;
+}
+
+.menu ul li{
+    list-style-type: none;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 6px;
+    padding: 10px 10px 10px 10px;
+    
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*estilos titulo*/
+
+.titulo{
+    text-align: center;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 70px;
+    padding: 15px;
+}
+
+h1{
+    text-align: left;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 70px;
+    padding: 120px;
+}
+
+/*estilos logo*/
+
+.logoLinkinpark{
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 200px;
+    max-width: 380px;
+    border-radius: 18px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-weight: 500;
+    font-weight: bolder;
+    padding: 2rem;
+    text-decoration: underline;
+}
+
+
+body{
+    background-color: grey;
+}
+
+main div p{
+    text-align: justify;
+    text-align: center;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-weight: 500;
+    font-size: 2rem;
+    color: black;
+}
+
+
+.imagenPieDePagina{
+    position: relative;
+    width: 25rem;
+    left: 100px;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+
+footer{
+    background-color: grey;
+    text-align: right;
+}
+
+
+
+/*estilos de Tienda*/
+
+.tituloDeTienda{
+    font-size: 5rem;
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: minmax(100px, auto) ;
+    grid-template-areas: "producto1 producto2"
+                         "producto3 producto4"
+                         "producto5 producto6";
+    justify-content: center;
+}
+
+.producto1{
+    grid-area: producto1;
+    margin: auto;
+}
+.producto2{
+    grid-area: producto2;
+    margin: auto;
+}
+.producto3{
+    grid-area: producto3;
+    margin: auto;
+}
+.producto4{
+    grid-area: producto4;
+    margin: auto;
+}
+.producto5{
+    grid-area: producto5;
+    margin: auto;
+}
+.producto6{
+    grid-area: producto6;
+    margin: auto;
+}
+.aclaracionProductos{
+    margin: auto;
+}
+
+
+
+.imagen1{
+    width: 10rem;
+    border-radius: 10px;   
+}
+
+.imagen2{
+    width: 16rem;
+    border-radius: 10px;   
+}
+
+.imagen3{
+    width: 15rem;
+    border-radius: 10px;   
+}
+
+.imagen4{
+    width: 15rem;
+    border-radius: 10px;   
+}
+
+.imagen5{
+    width: 16rem;
+    border-radius: 10px;   
+}
+
+.imagen6{
+    width: 14rem;
+    border-radius: 10px;   
+}
+
+.sobreProductos{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-weight: bolder;
+    color: black;
+    background-color: grey;
+    padding: 50px;
+    text-decoration: underline;
+}
+
+
+/*estilos de suscribete*/
+
+.linkinPark{
+    position: absolute;
+    bottom: 45%;
+    right: 180px;
+    width: 20%;
+    border-radius: 3px;
+    display: none;
+}
+
+.tituloSuscribete{
+    text-align: center;
+    margin: auto;
+    padding: 3rem;
+    font-size: 3rem;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+.formularioSuscribete{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.botonOk{
+    width: 80px;
+}
+
+.botonReset{
+    width: 80px;
+}
+
+
+/*estilos de conciertos*/
+
+.fechas{
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+
+.video{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-area:"video1"
+              "video2"
+              "video3" ;
+    justify-content: center;
+}
+
+.video1{
+    margin: 2rem;
+}
+
+.video2{
+    margin: 2rem;
+}
+.video3{
+    margin: 2rem;
+}
+
+
+.conciertosImg{
+    display: none;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+
+.linkEnd{
+    margin-left: 7rem;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    background-color: grey;
+    font-weight: bold;
+}
+
+div h2 a{
+    text-decoration: none;
+    color: red;
+}
+
+
+/*estilos de discografia*/
+
+.tituloDiscografia{
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    text-decoration: underline;
+}
+
+
+
+.integrantesImg{
+    display: none;
+}
+
+
+
+/*estilo de las imagenes de los album*/
+
+.hibridImg{
+    width: 25rem;
+    border-radius: 4px;
+}
+
+.meteoraImg{
+    width: 25rem;
+    border-radius: 4px;
+}
+
+.minutesImg{
+    width: 25rem;
+    border-radius: 4px;
+}
+
+/*estilo de las listas de temas*/
+
+.hibridOl{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+}
+.meteoraOl{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+}
+.minutesOl{
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+}
+/*Aplicando Grid*/
+
+.mainDiscografia{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto ;
+    grid-template-areas: "hibridUno"
+                         "hibridDos"
+                         "meteoraUno"
+                         "meteoraDos"
+                         "minutesUno"
+                         "minutesDos";
+    justify-content: center;
+}
+
+.hibridUno{
+    grid-area: hibridUno;
+    margin: 2rem;
+}
+.hibridDos{
+    grid-area: hibridDos;
+    margin: 2rem;
+}
+.meteoraUno{
+    grid-area: meteoraUno;
+    margin: 2rem;
+}
+.meteoraDos{
+    grid-area: meteoraDos;
+    margin: 2rem;
+}
+.minutesUno{
+    grid-area: minutesUno;
+    margin: 2rem;
+}
+.minutesDos{
+    grid-area: minutesDos;
+    margin: 2rem;
+}
+
+
+/*media querie*/
+
+@media screen and (min-width:600px){
+
+    /*estilos de index*/
+    .logoLinkinpark{
+        display: block;
+    }
+    .menu{
+        justify-content: end;
+    }
+
+    .logoLinkinpark{
+        position: absolute;
+        top: 88px;
+        right: 200px;
+        max-width: 380px;
+        border-radius: 2rem;
+    }
+
+.titulo{
+        text-align: left;
+        font-size: 5rem;
+        padding: 120px;
+        margin-left: 7rem;
+    }
+
+.subtitulo{
+    font-size: 4rem;
+}
+
+.imagenPieDePagina{
+    width: 70%;
+    margin-left: 7rem;
+}
+/*estilos de tienda*/
+.tituloDeTienda{
+    font-size: 5rem;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: minmax(100px, auto) ;
+    grid-template-areas: "producto1 producto2 producto3"
+                         "producto4 producto5 producto6";
+    justify-content: center;
+}
+
+
+.imagen1{
+    width: 10rem;
+    border-radius: 10px;
+    margin: 4rem;   
+}
+
+.imagen2{
+    width: 16rem;
+    border-radius: 10px; 
+    margin: 4rem;     
+}
+
+.imagen3{
+    width: 15rem;
+    border-radius: 10px;   
+    margin: 4rem;   
+}
+
+.imagen4{
+    width: 15rem;
+    border-radius: 10px;   
+    margin: 4rem;   
+}
+
+.imagen5{
+    width: 16rem;
+    border-radius: 10px;   
+    margin: 4rem;   
+}
+
+.imagen6{
+    width: 14rem;
+    border-radius: 10px;   
+    margin: 4rem;   
+}
+
+/*estilos de suscribete*/
+
+.linkinPark{
+    position: absolute;
+    bottom: 55%;
+    right: 180px;
+    width: 20%;
+    border-radius: 3px;
+    display: block;
+}
+
+.tituloSuscribete{
+    text-align: left;
+    font-size: 50px;
+    padding-right: 40%;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+.formularioSuscribete{
+    text-align: center;
+    font-size: 40px;
+}
+
+/*estilo de los conciertos*/
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.integrantesImg{
+    display: block;
+}
+
+/*estilos de discografia*/
+
+.mainDiscografia{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto auto;
+    grid-template-areas: "hibridUno hibridDos"
+                         "meteoraUno meteoraDos"
+                         "minutesUno minutesDos"
+                         ;
+    justify-content: center;
+}
+.hibridUno{
+    margin: 4rem;
+}
+.hibridDos{
+    margin: 4rem;
+}
+.meteoraUno{
+    margin: 4rem;
+}
+.meteoraDos{
+    margin: 4rem;
+}
+.minutesUno{
+    margin: 2rem;
+}
+.minutesDos{
+    margin: 2rem;
+}
+
+.integrantesImg{
+    width: 65%;
+    border-radius: 10px;
+    margin-left: 14.5rem;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
