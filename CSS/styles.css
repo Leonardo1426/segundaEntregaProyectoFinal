@@ -6,57 +6,8 @@
 
 /*estilos del index*/
 
-/*estilos menu*/
-
-.menu{
-    display: flex;    
-    background-color: black;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    justify-content: center;
-}
-
-.menu ul li{
-    list-style-type: none;
-    background-color: white;
-    display: inline-block;
-    border-radius: 10px;
-    margin: 6px;
-    padding: 10px 10px 10px 10px;
-    
-    
-}
-.menu ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-/*estilos titulo*/
-
-.titulo{
-    text-align: center;
-    font-family: 'Anek Malayalam', sans-serif;
-    font-family: 'Staatliches', cursive;
-    font-size: 70px;
-    padding: 15px;
-}
-
-h1{
-    text-align: left;
-    font-family: 'Anek Malayalam', sans-serif;
-    font-family: 'Staatliches', cursive;
-    font-size: 70px;
-    padding: 120px;
-}
-
-/*estilos logo*/
-
 .logoLinkinpark{
     display: none;
-    position: absolute;
     top: 56px;
     right: 200px;
     max-width: 380px;
@@ -73,7 +24,54 @@ h1{
     padding: 2rem;
     text-decoration: underline;
 }
+.titulo{
+    text-align: center;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 70px;
+    padding: 15px;
+}
 
+.imagenPieDePagina{
+    position: relative;
+    width: 25rem;
+    left: 100px;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+
+/*estilos menu*/
+.conciertos{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.discografia{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.suscribete{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.tienda{
+    font-weight: bolder;   
+    font-size: 1.3rem;
+}
+
+
+
+/*estilos titulo*/
+
+
+
+h1{
+    text-align: left;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-size: 70px;
+    padding: 120px;
+}
 
 body{
     background-color: grey;
@@ -89,18 +87,9 @@ main div p{
     color: black;
 }
 
-
-.imagenPieDePagina{
-    position: relative;
-    width: 25rem;
-    left: 100px;
-    justify-content: center;
-    border-radius: 1.5rem;
-}
-
 footer{
     background-color: grey;
-    text-align: right;
+    text-align: end;
 }
 
 
@@ -110,7 +99,7 @@ footer{
 .tituloDeTienda{
     font-size: 5rem;
     margin: 2rem;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
     font-family: 'Anek Malayalam', sans-serif;
     font-family: 'Staatliches', cursive;
@@ -218,7 +207,19 @@ footer{
     font-family: 'Anek Malayalam', sans-serif;
     font-family: 'Staatliches', cursive;
 }
-
+.suscribete2{
+    font-weight: bolder;
+    font-size: 3.5rem;
+}
+.form1{
+font-weight: bolder;
+}
+.form2{
+font-weight: bolder;
+}
+.form3{
+font-weight: bolder;
+}
 .formularioSuscribete{
     text-align: center;
     font-size: 2rem;
@@ -385,28 +386,46 @@ div h2 a{
 
 @media screen and (min-width:600px){
 
-    /*estilos de index*/
-    .logoLinkinpark{
-        display: block;
-    }
-    .menu{
-        justify-content: end;
-    }
+    /*estilos del menu*/
 
-    .logoLinkinpark{
+.logonavbar:hover{
+    background-color: whitesmoke;
+}
+.conciertos:hover{
+    background-color: whitesmoke;
+}
+.discografia:hover{
+    background-color: whitesmoke;
+}    
+.suscribete:hover{
+    background-color: whitesmoke;
+}
+.tienda:hover{
+    background-color: whitesmoke;
+}
+
+    /*estilos de index*/
+.logoLinkinpark{
+    display: block;}
+.menu{
+    justify-content: end;
+}
+
+.logoLinkinpark{
+        display: flex;
         position: absolute;
         top: 88px;
         right: 200px;
         max-width: 380px;
         border-radius: 2rem;
-    }
+}
 
 .titulo{
         text-align: left;
         font-size: 5rem;
         padding: 120px;
         margin-left: 7rem;
-    }
+}
 
 .subtitulo{
     font-size: 4rem;
@@ -417,6 +436,7 @@ div h2 a{
     margin-left: 7rem;
 }
 /*estilos de tienda*/
+
 .tituloDeTienda{
     font-size: 5rem;
     margin: 1rem;
@@ -546,6 +566,7 @@ div h2 a{
     margin-left: 14.5rem;
 
 }
+
 
 }
 
